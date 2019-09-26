@@ -1,0 +1,104 @@
+<html>
+
+
+
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" type="text/css" href="qaproject.css">
+</head>
+
+<body>
+    <title>MyArtSupplies</title>
+    
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">My Art Supplies</h1>
+        </div>
+    </div>
+    
+    <h2 style="text-align: center">Product List</h2><br>
+    
+    <!-- <div class="sidenav">
+        
+        <a href="#" style="text-align: center">Products</a>
+        <a href="mylist.html" style="text-align: center">My List</a>
+        
+    </div> -->
+    
+    <center>
+        <div class="container">
+            <div class="row">
+                <div id="cardList" class="col-12 mt-3">
+                    <!-- apply style to css style="width: 31rem;"-->
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <!-- apply css as .img-square-wrapper img {width:200px;height:200px;} -->
+                                <img src="https://cdn.shopify.com/s/files/1/1751/8993/products/galeria60ml.jpg?v=1509463939"
+                                alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title" id="name">name</h4>
+                                <!-- only applied one class, fudge knows how to apply many - google fdoes too -->
+                                <ul class="list-group list-group-flush">
+                                    <!-- apply bold in styles -->
+                                    <li class="list-group-item" id="category"><b></b></li>
+                                    <li class="list-group-item" id="description"><b></b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success" id="mybtn" onClick="myfunc()">
+                                <h5 class="added">+</h5>
+                            </button>
+                            <br>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <br>
+            <form onsubmit="return createProduct(event)">
+                    <div class="form-group">
+                        <label for="exampleName">Product Name</label>
+                        <input class="form-control" name="name" id="InputName" placeholder="Product Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCategory">Category</label>
+                        <input class="form-control" name="category" id="InputCategory" placeholder="Product Category">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCategory">Description</label>
+                        <input class="form-control" name="description" id="InputDescription" placeholder="Product Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCategory">Image Link</label>
+                        <input type="URL" class="form-control" name="imageUrl" id="InputImageLink" placeholder="Image URL">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </center>
+        
+        
+        
+    <script src="qaproject.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    </body>
+    
+    
+
+</html>

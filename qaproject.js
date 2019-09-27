@@ -198,7 +198,7 @@ function updateProduct(event){
     }
     httpRequest(method, URL, callback, headers,JSON.stringify(body));
     return false;
-};
+}
 
 
 getProducts();

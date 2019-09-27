@@ -160,7 +160,7 @@ function createProduct(event){
     }
     //http://localhost:9000/products/
     let method = "POST";
-    let URL = "http://34.89.69.35/products/";
+    let URL = "http://34.89.69.35:9000/products/";
     let callback = getProducts;
     let headers = {
         "Content-Type": "application/json"

@@ -127,7 +127,7 @@ function printCard(request) {
 
 function getProducts(){
     let method = "GET";
-    let URL = "http://localhost:9000/products";
+    let URL = "http://34.89.69.35:9000/products";
     let callback = printCard;
     let headers = {
         "Content-Type": "application/json"
@@ -137,7 +137,7 @@ function getProducts(){
 
 function deleteProduct(id){
     let method = "DELETE";
-    let URL = "http://localhost:9000/products/"+id;
+    let URL = "http://34.89.69.35:9000/products/"+id;
     let callback = getProducts;
     let headers = {
         "Content-Type": "application/json"
@@ -181,7 +181,7 @@ function updateProduct(event){
             continue;
         }
         if (key == "productid"){
-            URL = "http://localhost:9000/products/"+input.value;
+            URL = "http://34.89.69.35:9000/products/"+input.value;
             continue;
         }
         let value = input.value;

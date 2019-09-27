@@ -61,7 +61,7 @@ function printCard(request) {
         image.setAttribute("class", "productImage");
         image.src = product.imageUrl;
 
-        imageWrapper.appendChild(image)
+        imageWrapper.appendChild(image);
 
         let cardBody = document.createElement("div");
         cardBody.setAttribute("class","card-body");
@@ -97,10 +97,10 @@ function printCard(request) {
         let button = document.createElement("button");
         button.type = "button";
         button.setAttribute("class", "btn btn-danger");
-        button.setAttribute("onclick", "deleteProduct("+product.id+")")
+        button.setAttribute("onclick", "deleteProduct("+product.id+")");
 
         let p1 = document.createElement("p");
-        p1.setAttribute("class", "added")
+        p1.setAttribute("class", "added");
         p1.innerText = "Delete";
 
         button.appendChild(p1);
@@ -112,7 +112,7 @@ function printCard(request) {
         button2.setAttribute("data-toggle", "modal");
         button2.setAttribute("data-target","#editModal");
         let p = document.createElement("p");
-        p.setAttribute("class", "update")
+        p.setAttribute("class", "update");
         p.innerText = "Edit Product";
 
         button2.appendChild(p);
@@ -187,18 +187,18 @@ function updateProduct(event){
         let value = input.value;
         body[key] = value; 
     }
-    console.log(body);
-    // let id = 4;
+    
+
     let method = "PUT";
-    //let URL = "http://localhost:9000/products/"+form.input.name.productid;
+    
     let callback = getProducts;
-    //console.log(JSON.parse(callback));
+    
     let headers = {
         "Content-Type": "application/json"
     }
     httpRequest(method, URL, callback, headers,JSON.stringify(body));
     return false;
-}
+};
 
 
 getProducts();
